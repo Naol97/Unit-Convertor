@@ -64,7 +64,7 @@ button{
 
 #menu{
     position: absolute;
-    top: 7%;
+    top: 7.5%;
     right: 4%;
     z-index: 40;
     cursor: pointer;
@@ -266,6 +266,16 @@ button{
     transition: 0.1s;
 }
 
+.clear:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+#menu:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
 .active{
     display: block;
     opacity: 0.951;
@@ -275,4 +285,65 @@ button{
 .rot{
     transform: rotate(-180deg);
     transition: 0.3s;
+}
+
+@media (max-width: 700px){
+    .container h1{
+        position: absolute;
+        top: 6%;
+    }
+
+    .inner-container{
+        display: block;
+        width: 100%;
+        margin-top: 2%;
+        /* transform: translateY(-30%); */
+    }
+
+    .box{
+        display: flex;
+        align-self: center;
+        flex-direction: row;
+        align-items: center;
+        width: 70%;
+        height: 100px;
+        /* background-color: yellow; */
+        margin: 15px 15px;
+    }
+
+    .box select{
+        margin: 0;
+        width: 20%;
+        font-size: 34px;
+    }
+
+    .box select:active{
+        scale: 1;
+    }
+
+    .left{
+        float: left;
+    }
+
+    .right{
+        float: right;
+        backdrop-filter: none;
+    }
+
+    .traf{
+        position: absolute;
+        top: 32.49%;
+        left: 40%;
+        scale: 1.1;
+        transform: rotate(-90deg);
+        /* z-index: 1; */
+    }
+}
+
+@media (max-width: 640px){
+    .box select{
+        margin: 0;
+        width: 20%;
+        font-size: 22.5px;
+    }
 }

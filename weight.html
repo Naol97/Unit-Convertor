@@ -7,73 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="header">
-       <a href="index.html"><div class="home">
-        <img src="/Assets/black-white-bn-b-n-alphabet-letter-logo-combination-icon-design-black-white-bn-b-n-alphabet-letter-combination-suitable-as-138738001-removebg-preview.png" width="40" alt="">
-        <h1 style="text-decoration: none;">BN UnitCovertor</h1>
-        </div></a>
-    </nav>
+
     <div class="container">
+        <img src="Assets/reset_button.png" class="clear" width="30" alt="">
 
-        <!-- Left --> 
-         
-        <div class="innerLeft">
-        <h1>Weight</h1>
-        <div class="from_to">
-        <div class="ft from">
-            <p>from</p>
-            <select name="sfrom" id="fromWeightSelector">
-                <option value="kg">kg</option>
-                <option value="g">g</option>
-                <option value="mg">mg</option>
-                <option value="lb">lb</option>
-                <option value="oz">oz</option>
+        <h1 style="display: inline;">Weight</h1>
+
+        <img src="/Assets/menu-icon.png" width="30" id="menu" alt="">
+
+        <div class="inner-container">
+
+            <div class="box left">
+            <select name="sfrom" class="Wsele" id="fromWeightSelector">
+                <option value="KG">KG</option>
+                <option value="g">G</option>
+                <option value="mg">MG</option>
+                <option value="lb">LB</option>
+                <option value="oz">OZ</option>
             </select>
-        </div>
-        <img src="Assets/transfer-icon-symbol-design-illustration-vector-removebg-preview.png" width="50" height="50"  alt="">
-        <div class="ft to">
-            <p>to</p>
-            <!-- <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px;">
-            <button>m</button>
-            <button>km</button>
-            <button>cm</button>
-            <button>mm</button>
-            </div> -->
-            <select name="sfrom" id="toWeightSelector">
-                <option value="kg">kg</option>
-                <option value="g">g</option>
-                <option value="mg">mg</option>
-                <option value="lb">lb</option>
-                <option value="oz">oz</option>
+
+            <input type="number" class="inputt" id="weightInput">
+
+            </div>
+
+
+            <img src="Assets/transfer-icon.png" class="tra" width="120" height="120"  alt="">
+        
+        <div class="box right">
+            <select name="sfrom" class="Wsele" id="toWeightSelector">
+                <option value="KG">KG</option>
+                <option value="g">G</option>
+                <option value="mg">MG</option>
+                <option value="lb">LB</option>
+                <option value="oz">OZ</option>
             </select>
-        </div>
-        </div>
-        <div style="display: flex; justify-content: center;align-items: center;">
-        <input type="number" class="inputt" id="weightInput">
-        <img src="Assets/transfer-icon-symbol-design-illustration-vector-removebg-preview.png" width="50" height="50"  alt="">
-        <!-- <input type="number" name="" id="res" readonly> -->
-         <div class="resultWrapper">
+        
         <p name="" class="result" id="weightRes"></p>
+            </div>
         </div>
-        </div>
+       
         <button id="calc" onclick="weightCalc(getWeightValue(), weightFrom(), weightTo())">Calculate</button>
+
+
+            <div class="dropDown">
+            <div class="inner-drop">
+            <a href="length.html"><button>LENGTH</button></a>
+                <div class="divider"></div>
+            <a href="temperature.html"><button>TEMPERATURE</button>
+                <div class="divider"></div>
+            <a href="index.html"><button>HOME</button>
+                <div class="divider"></div>
+            </div>
         </div>
-        <!-- Left -->
-
-        <div class="vline"></div>
-
-        <!-- Right -->
-
-        <div class="innerRight">
-            <div class="buttons">
-            <!-- <a href="length.html"><button>Length</button></a> -->
-            <a href="length.html"><button>Length</button></a>
-            <a href="temperature.html"><button>Temperature</button>
         </div>
-        </div>
-
-        <!-- Right -->
-    </div>
+      
     <script src="script.js"></script>
 </body>
 </html>

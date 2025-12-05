@@ -102,15 +102,15 @@ a{
 .inner-container button:hover{
     border: 0.7px solid  #94b1b5;
     background-color: #94b1b5;
-    scale: 1.01;
+    scale: 1.1;
+}
+
+.inner-container button:active{
+    background-color: #6e8286;
 }
 
 
-@media (max-width: 889px){
-    .container{
-        width: 40%;
-        height: 90vh;
-    }
+@media (max-width: 700px){
 
     .home-header h1{
         font-size: 20px;

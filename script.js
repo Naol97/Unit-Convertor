@@ -18,6 +18,7 @@ const drop = document.querySelector(".dropDown");
 const clear = document.querySelector(".clear");
 const Tselect = document.querySelectorAll(".Tsele");
 const Lselect = document.querySelectorAll(".Lsele");
+const Wselect = document.querySelectorAll(".Wsele");
 const calc = document.getElementById("calc");
 const tra = document.querySelector(".tra");
 
@@ -84,7 +85,7 @@ const tra = document.querySelector(".tra");
         }
 
         const weightFactors = {
-        kg: 1,
+        KG: 1,
         g: 0.001,
         mg: 0.000001,
         lb: 0.453592,
@@ -157,6 +158,9 @@ const tra = document.querySelector(".tra");
             Lselect.forEach(Lsele=>{
                 Lsele.value = "M";
             })
+            Wselect.forEach(Wsele =>{
+                Wsele.value = "KG"
+            })
             clear.classList.toggle("rot");
         })
 
@@ -167,3 +171,23 @@ const tra = document.querySelector(".tra");
         // calc.addEventListener("mouseup", ()=>{
         //       tra.classList.remove("zoom");
         // })
+
+        if(window.innerWidth <= 797){
+            tra.classList.add("traf");
+            tra.src = "Assets/transfer-icon-flipped.png";
+        }else{
+            tra.classList.remove("traf");
+            tra.src = "Assets/transfer-icon.png";
+        }
+
+        window.addEventListener("resize", ()=>{
+            if(window.innerWidth <= 797){
+            tra.classList.add("traf");
+            tra.src = "Assets/transfer-icon-flipped.png";
+        }else{
+            tra.classList.remove("traf");
+            tra.src = "Assets/transfer-icon.png";
+        }
+        })
+
+        
