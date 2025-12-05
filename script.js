@@ -143,9 +143,9 @@ const tra = document.querySelector(".tra");
             drop.classList.toggle("active");
             menu.classList.toggle("rot");
             if(menu.src.includes("menu-icon.png")){
-                menu.src = "assets/image.png";
+                menu.src = "Assets/image.png";
             }else{
-                menu.src = "assets/menu-icon.png";
+                menu.src = "Assets/menu-icon.png";
             }
         })
 
@@ -174,19 +174,19 @@ const tra = document.querySelector(".tra");
 
         if(window.innerWidth <= 797){
             tra.classList.add("traf");
-            tra.src = "assets/transfer-icon-flipped.png";
+            tra.src = "Assets/transfer-icon-flipped.png";
         }else{
             tra.classList.remove("traf");
-            tra.src = "assets/transfer-icon.png";
+            tra.src = "Assets/transfer-icon.png";
         }
 
         window.addEventListener("resize", ()=>{
             if(window.innerWidth <= 797){
             tra.classList.add("traf");
-            tra.src = "assets/transfer-icon-flipped.png";
+            tra.src = "Assets/transfer-icon-flipped.png";
         }else{
             tra.classList.remove("traf");
-            tra.src = "assets/transfer-icon.png";
+            tra.src = "Assets/transfer-icon.png";
         }
         })
 
