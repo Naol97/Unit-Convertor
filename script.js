@@ -13,7 +13,7 @@ const tempRes = document.getElementById("tempRes");
 const result = document.querySelector(".result");
 const inputValue = document.querySelector(".inputt");
 
-const menu = document.getElementById("menu");
+const menu = document.querySelector(".menu");
 const drop = document.querySelector(".dropDown");
 const clear = document.querySelector(".clear");
 const Tselect = document.querySelectorAll(".Tsele");
